@@ -1,0 +1,17 @@
+{
+    "contents" : "call_alleles <- function()\n",
+    "created" : 1411573172683.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "373892364",
+    "id" : "5270AB91",
+    "lastKnownWriteTime" : 1411574872,
+    "path" : "~/code/rPCA/R/call_alleles.R",
+    "project_path" : "R/call_alleles.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
