@@ -46,10 +46,11 @@ filter_evec <- function(evec_file){
                            "PC3","PC4","PC5","PC6",
                            "PC7","PC8","PC9","PC10")
 
-  cbind(reshape2::colsplit(filter_df,
-                          split = ":",
+  final_output <- cbind(reshape2::colsplit(filter_df[,1],
+                          pattern = ":",
                           names = c("Fam_ID", "Sample_ID"))
         , filter_df[2:11])
 
+  return(final_output)
 
 }
