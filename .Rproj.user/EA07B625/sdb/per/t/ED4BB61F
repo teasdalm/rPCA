@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Filter evec\n#'\n#'R function to collect evec file into a dataframe\n#'\n#'@param evec_file input evec file\n#'@keywords smartpca\n#'@export\n#'@import reshape2\n#'@examples\n#'filter_evec(evec_file)\n\n\nfilter_evec <- function(evec_file){\n\n  ## ----------- Filter evec_file\n\n  # create string to pass to system\n  filter_string <- paste(\"cat \",\n                          evec_file,\n                          \"| sed 's/^ *//g' | tr -s ' '\")\n\n  # filter the strings\n  filter_raw <- system(filter_string, intern = TRUE)\n\n  ## ----------- create a dataframe\n  filter_mx <- t(\n    data.frame(\n      sapply(filter_raw , function (x)\n        strsplit(x, split=\" \")[[1]][1:11])\n      , stringsAsFactors = FALSE))\n\n  filter_df <- data.frame(filter_mx, stringsAsFactors = FALSE)\n\n  ## ------------ organise dataframe\n\n  # get rid of row names and first row\n  rownames(filter_df) <- NULL\n  filter_df <- filter_df[-1,]\n\n  # convert to numerics\n  for (i in seq(from = 2, to = ncol(filter_df))){\n    filter_df[,i] <- as.numeric(filter_df[,i])\n  }\n\n  colnames(filter_df) <- c(\"Sample\",\"PC1\",\"PC2\",\n                           \"PC3\",\"PC4\",\"PC5\",\"PC6\",\n                           \"PC7\",\"PC8\",\"PC9\",\"PC10\")\n\n  final_output <- cbind(reshape2::colsplit(filter_df[,1],\n                          pattern = \":\",\n                          names = c(\"Fam_ID\", \"Sample_ID\"))\n        , filter_df[2:11])\n\n  return(final_output)\n\n}\n",
+    "created" : 1411572988077.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "204471473",
+    "id" : "ED4BB61F",
+    "lastKnownWriteTime" : 1411572995,
+    "path" : "~/code/rPCA/R/filter_evec.R",
+    "project_path" : "R/filter_evec.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

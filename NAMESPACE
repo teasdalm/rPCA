@@ -3,4 +3,4 @@
 export(draw_pca)
 export(filter_evec)
 import(ggplot2)
-import(reshape)
+import(reshape2)

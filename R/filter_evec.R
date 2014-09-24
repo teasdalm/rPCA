@@ -5,7 +5,7 @@
 #'@param evec_file input evec file
 #'@keywords smartpca
 #'@export
-#'@import reshape
+#'@import reshape2
 #'@examples
 #'filter_evec(evec_file)
 
