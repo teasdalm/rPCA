@@ -12,8 +12,8 @@
 draw_pca <- function(evec_df){
 
   # plot PCA with ggplot2
-  plt <- ggplot2::ggplot(evec_df, aes(PC1, PC2)) +
-    ggplot2::geom_text(aes(label=Fam_ID, colour = Fam_ID), size=4, vjust=0)
+  plt <- ggplot2::ggplot(evec_df, ggplot2::aes(PC1, PC2)) +
+    ggplot2::geom_text(ggplot2::aes(label=Fam_ID, colour = Fam_ID), size=4, vjust=0)
 
   print(plt)
 
