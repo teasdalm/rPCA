@@ -12,8 +12,8 @@
 
 draw_pca <- function(evec_df, sample_id){
 
-  sample <- dat[evec_df$Fam_ID == "KRP",]
-  others <- dat[evec_df$Fam_ID != "KRP",]
+  sample <- dat[evec_df$Fam_ID == sample_id,]
+  others <- dat[evec_df$Fam_ID != sample_id,]
 
   # plot PCA with ggplot2
   plt <- ggplot2::ggplot(others, ggplot2::aes(PC1, PC2)) +
