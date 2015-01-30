@@ -8,9 +8,9 @@
 #'@export
 #'@import ggplot2
 #'@examples
-#'draw_pca(evec_df)
+#'draw_pca(evec_df, sample_id)
 
-draw_pca <- function(evec_df, sample_id){
+draw_pca <- function(evec_df, sample_id="XXX"){
 
   sample <- evec_df[evec_df$Fam_ID == sample_id,]
   others <- evec_df[evec_df$Fam_ID != sample_id,]
