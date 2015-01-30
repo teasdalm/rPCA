@@ -3,12 +3,12 @@
 #'R function draw a PCA from an evec dataframe
 #'
 #'@param evec_df input dataframe
-#'@param sample_id
+#'@param sample_id ["XXX"]
 #'@keywords smartpca
 #'@export
 #'@import ggplot2
 #'@examples
-#'draw_pca(evec_df, sample_id)
+#'draw_pca(evec_df, sample_id="sample1")
 
 draw_pca <- function(evec_df, sample_id="XXX"){
 
