@@ -12,7 +12,7 @@ filter_ped(input_file_name, output_file_name)
 \item{ouput_file}{output file ped}
 }
 \description{
-R function draw a PCA from an evec dataframe
+R function to make a ped file homzygous
 }
 \examples{
 filter_ped("input_file.ped", "output_file.ped")
