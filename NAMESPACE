@@ -2,5 +2,6 @@
 
 export(draw_pca)
 export(filter_evec)
+export(filter_ped)
 import(ggplot2)
 import(reshape2)
