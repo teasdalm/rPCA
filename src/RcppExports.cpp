@@ -6,18 +6,15 @@
 using namespace Rcpp;
 
 // filter_ped
-int filter_ped(std::string input_file_name, std::string output_file_name);
+void filter_ped(std::string input_file_name, std::string output_file_name);
 RcppExport SEXP rPCA_filter_ped(SEXP input_file_nameSEXP, SEXP output_file_nameSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
     {
         Rcpp::RNGScope __rngScope;
         Rcpp::traits::input_parameter< std::string >::type input_file_name(input_file_nameSEXP );
         Rcpp::traits::input_parameter< std::string >::type output_file_name(output_file_nameSEXP );
-        int __result = filter_ped(input_file_name, output_file_name);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
+        filter_ped(input_file_name, output_file_name);
     }
-    UNPROTECT(1);
-    return __sexp_result;
+    return R_NilValue;
 END_RCPP
 }
