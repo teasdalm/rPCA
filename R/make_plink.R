@@ -9,8 +9,6 @@
 #'@import ggplot2
 #'@examples
 #' make_plink(evec_df, sample_id="sample1")
-
-
 make_plink <- function(pileup_df, sample_name){
 
   output_file_base = "~/Desktop/"
