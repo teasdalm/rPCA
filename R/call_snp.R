@@ -18,5 +18,5 @@ call_snp <- function(x){
   # randomly sample allele and return
   coverage <- length(alleles)
   choice <- sample(c(1:coverage),1)
-  return(str_sub(alleles, choice, choice))
+  return(stringr::str_sub(alleles, choice, choice))
 }
