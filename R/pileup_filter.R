@@ -1,4 +1,14 @@
-filter_pileup <- function(pileup_file){
+#' Pileup filter
+#'
+#' R function filter a pileup file into a dataframe
+#'
+#'@param pileup_file pileup
+#'@keywords Pileup
+#'@export
+#'@examples
+#' call_snp(x)
+
+pileup_filter <- function(pileup_file){
 
   pileup <- scan(pileup_file,
               what=character(),

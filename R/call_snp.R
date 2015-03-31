@@ -1,6 +1,6 @@
 #' call SNPs
 #'
-#' R function to call SNPs from a pileup file
+#' R function to call SNPs from a pileup dataframe
 #'
 #'@param x pileup dataframe
 #'@keywords Pileup
@@ -10,13 +10,13 @@
 
 call_snp <- function(x){
   # select alleles
-  alleles <- x[4]
+  alleles <- x["base_calls"]
 
   # select quality
-  quality <- x[5]
+  quality <- x["qualities"]
 
   # randomly sample allele and return
   coverage <- length(alleles)
   choice <- sample(c(1:coverage),1)
-  return(stringr::str_sub(alleles, choice, choice))
+  return(str_sub(alleles, choice, choice))
 }

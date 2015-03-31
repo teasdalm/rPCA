@@ -16,7 +16,7 @@ make_plink <- function(pileup_file, sample_name){
 
   # Read pileup file
   message("Reading ", pileup_file)
-  pileup_df <- filter_pileup(pileup_file)
+  pileup_df <- pileup_filter(pileup_file)
 
   # Get alleles and make sudo dipolid
   alleles <- apply(pileup_df, 1, call_snp)
@@ -30,6 +30,7 @@ make_plink <- function(pileup_file, sample_name){
   # Make and output map file
   output_file_map <- paste0(output_file_base, ".map")
   message("Making MAP file ", output_file_map)
-  apply(pileup_df, 1, make_map, outfile = output_file_map )
+  apply(pileup_df, 1, make_map, outfile = output_file_map)
+  message("Finished")
 
 }

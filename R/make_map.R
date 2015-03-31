@@ -12,9 +12,9 @@
 
 make_map <- function(x, outfile){
   # replace chromosome name
-  chr <- stringr::str_replace(x[1], "chr", "")
-  position <- x[2]
-  snp_name <- paste0(stringr::str_replace(x[9], "]", ""), ".1")
+  chr <- stringr::str_replace(x["chr"], "chr", "")
+  position <- x["position"]
+  snp_name <- paste0(x["SNP"], ".1")
 
   # Write map file with cat
   cat(chr, snp_name, "0", position, '\n', file=outfile, append = TRUE)
