@@ -19,7 +19,8 @@ draw_pca <- function(evec_df, sample_id="XXX"){
   plt <- ggplot2::ggplot(others, ggplot2::aes(PC1, PC2)) +
     ggplot2::geom_text(ggplot2::aes(label=Fam_ID, colour = Fam_ID), size=4, vjust=0) +
     ggplot2::geom_point(data=sample,colour="blue",pch=15,size=5) +
-    guides(col = guide_legend(ncol = 3))
+    guides(col = guide_legend(ncol = 3)) + 
+    theme(legend.position="none")
 
   print(plt)
 
