@@ -2,26 +2,28 @@
 #'
 #'R function draw a PCA from an evec dataframe
 #'
-#'@param evec_df input dataframe
-#'@param sample_id ["XXX"]
-#'@keywords smartpca
+#'@param x dataframe
+#'@param id sample id ["XXX"]
 #'@export
 #'@import ggplot2
+#'@import RColorBrewer
 #'@examples
-#'draw_pca(evec_df, sample_id="sample1")
+#'draw_pca(x, ids="sample1")
 
-draw_pca <- function(evec_df, sample_id="XXX"){
+draw_pca <- function(x, ids="XXX"){
 
-  sample <- evec_df[evec_df$Fam_ID == sample_id,]
-  others <- evec_df[evec_df$Fam_ID != sample_id,]
+  sample <- subset(x, breed %in% ids)
+  others <- subset(x, !breed %in% ids)
+  my_colours <- brewer.pal(n = 12, name = 'Paired')
 
   # plot PCA with ggplot2
-  plt <- ggplot2::ggplot(others, ggplot2::aes(PC1, PC2)) +
-    ggplot2::geom_text(ggplot2::aes(label=Fam_ID, colour = Fam_ID), size=4, vjust=0) +
-    ggplot2::geom_point(data=sample,colour="blue",pch=15,size=5) +
-    guides(col = guide_legend(ncol = 3)) + 
-    theme(legend.position="none")
+  plt <- ggplot(others, aes(PC1, PC2)) +
+    geom_point(aes(colour=breed, shape=breed), size=3.5) +
+    scale_shape_manual(values = rep(c(1:10,12:20), 10)) +
+    scale_color_manual(values=rep(my_colours, 10)) +
+    geom_point(data=sample,colour="blue",pch=15,size=5) +
+    guides(col = guide_legend(ncol = 3))
 
-  print(plt)
+  plt
 
 }
