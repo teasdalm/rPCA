@@ -1,6 +1,6 @@
 rPCA
 ====
-__NB!__ very much alpha
+__NB!__ very much __alpha__
 
 * Install.
 
