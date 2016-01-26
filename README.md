@@ -12,7 +12,7 @@ library(rPCA)
 * Read evec file.
 
 ```R 
-tab <- read_evec("file.evec")`
+tab <- read_evec("file.evec")
 ```
 * Draw PCA all samples.
 
