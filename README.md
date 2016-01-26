@@ -1,8 +1,23 @@
 rPCA
 ====
+__NB!__ very much alpha
 
-Experimental R code for SNP PCAs
+* Install.
 
-Under active development likely to change and break often, highly specialised to my own data.
+```R
+devtools::install_github("teasdalm/rPCA")
+library(rPCA)
+```
 
-The latest version can be installed with devtools
+* Read evec file.
+
+`tab <- read_evec("file.evec")`
+
+* Draw PCA all samples.
+
+`draw_pca(tab)`
+
+* Draw PCA highlighting family id.
+
+`draw_pca(tab, FAMILY_ID)`
+
