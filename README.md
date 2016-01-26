@@ -23,5 +23,5 @@ draw_pca(tab)
 * Draw PCA highlighting family id.
 
 ```R
-draw_pca(tab, FAMILY_ID)
+draw_pca(tab, "FAMILY_ID")
 ```
