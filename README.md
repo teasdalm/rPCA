@@ -17,11 +17,11 @@ tab <- read_evec("file.evec")`
 * Draw PCA all samples.
 
 ```R
-draw_pca(tab)`
+draw_pca(tab)
 ```
 
 * Draw PCA highlighting family id.
 
 ```R
-draw_pca(tab, FAMILY_ID)`
+draw_pca(tab, FAMILY_ID)
 ```
