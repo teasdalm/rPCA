@@ -11,13 +11,17 @@ library(rPCA)
 
 * Read evec file.
 
-`R tab <- read_evec("file.evec")`
-
+```R 
+tab <- read_evec("file.evec")`
+```
 * Draw PCA all samples.
 
-`R draw_pca(tab)`
+```R
+draw_pca(tab)`
+```
 
 * Draw PCA highlighting family id.
 
-`R draw_pca(tab, FAMILY_ID)`
-
+```R
+draw_pca(tab, FAMILY_ID)`
+```
