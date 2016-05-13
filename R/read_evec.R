@@ -12,8 +12,8 @@
 read_evec <- function(x){
 
   dat <- read.table(x, stringsAsFactors = FALSE)
-  dat <- separate(dat, V1, c("breed", "ind"), sep=":")
-  names(dat) <- c("breed",
+  dat <- separate(dat, V1, c("pop", "ind"), sep=":")
+  names(dat) <- c("pop",
                  "id",
                  "PC1", "PC2", "PC3",
                  "PC4", "PC5", "PC6",
