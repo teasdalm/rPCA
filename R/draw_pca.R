@@ -12,13 +12,13 @@
 
 draw_pca <- function(x, ids="XXX"){
 
-  sample <- subset(x, breed %in% ids)
-  others <- subset(x, !breed %in% ids)
+  sample <- subset(x, pop %in% ids)
+  others <- subset(x, !pop %in% ids)
   my_colours <- brewer.pal(n = 12, name = 'Paired')
 
   # plot PCA with ggplot2
   plt <- ggplot(others, aes(PC1, PC2)) +
-    geom_point(aes(colour=breed, shape=breed), size=3.5) +
+    geom_point(aes(colour=pop, shape=pop), size=3.5) +
     scale_shape_manual(values = rep(c(1:10,12:20), 10)) +
     scale_color_manual(values=rep(my_colours, 10)) +
     geom_point(data=sample,colour="blue",pch=15,size=5) +
