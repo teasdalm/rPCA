@@ -12,7 +12,7 @@
 #'@examples
 #'draw_pca(x, ids="sample1")
 
-draw_pca <- function(x, ids="XXX", a=PC1, b=PC2){
+draw_pca <- function(x, ids="XXX", a="PC1", b="PC2"){
 
   sample <- subset(x, pop %in% ids)
   others <- subset(x, !pop %in% ids)
