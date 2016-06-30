@@ -1,6 +1,6 @@
 #' Draw PCA laser names
 #'
-#'R function draw a PCA from an evec dataframe
+#'R function draw a PCA from a LASER dataframe
 #'
 #'@param x dataframe of reference data
 #'@param y dataframe of sample data
