@@ -1,4 +1,4 @@
-#' Draw PCA laser
+#' Draw PCA laser names
 #'
 #'R function draw a PCA from an evec dataframe
 #'
@@ -10,7 +10,7 @@
 #'@import ggplot2
 #'@import RColorBrewer
 
-draw_pca_laser <- function (x,y, bam_file_string = "-merge-rmdup", size_of_name = 3)
+draw_pca_laser_names <- function (x,y, bam_file_string = "-merge-rmdup", size_of_name = 3)
 {
   sample <- y
   sample$indivID <- gsub(bam_file_string, "", sample$indivID)

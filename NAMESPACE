@@ -3,6 +3,7 @@
 export(draw_pca)
 export(draw_pca_2)
 export(draw_pca_laser)
+export(draw_pca_laser_names)
 export(draw_pca_names)
 export(read_evec)
 import(RColorBrewer)
