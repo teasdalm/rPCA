@@ -8,12 +8,6 @@ draw_pca_laser(x)
 }
 \arguments{
 \item{x}{dataframe of reference data}
-
-\item{y}{dataframe of sample data}
-
-\item{bam_file_string}{string to remove from sample names}
-
-\item{size_of_name}{size of name to plot}
 }
 \description{
 R function draw a PCA from an evec dataframe
