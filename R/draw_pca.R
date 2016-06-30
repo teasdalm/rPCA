@@ -3,7 +3,7 @@
 #'R function draw a PCA from an evec dataframe
 #'
 #'@param x dataframe
-#'@param id sample id ["XXX"]
+#'@param ids sample id ["XXX"]
 #'@export
 #'@import ggplot2
 #'@import RColorBrewer

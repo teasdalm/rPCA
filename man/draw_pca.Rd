@@ -9,7 +9,7 @@ draw_pca(x, ids = "XXX")
 \arguments{
 \item{x}{dataframe}
 
-\item{id}{sample id ["XXX"]}
+\item{ids}{sample id ["XXX"]}
 }
 \description{
 R function draw a PCA from an evec dataframe
