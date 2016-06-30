@@ -13,7 +13,7 @@
 draw_pca_laser <- function (x,y, bam_file_string = "-merge-rmdup", size_of_name = 3)
 {
   sample <- y
-  sample$indivID <- gsub("-merge-rmdup", "", sample$indivID)
+  sample$indivID <- gsub(bam_file_string, "", sample$indivID)
   others <- x
   my_colours <- brewer.pal(n = 12, name = "Paired")
   plt <- ggplot(others, aes(-PC1, -PC2)) + geom_point(aes(colour = popID,
