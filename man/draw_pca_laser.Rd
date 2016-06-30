@@ -10,6 +10,6 @@ draw_pca_laser(x)
 \item{x}{dataframe of reference data}
 }
 \description{
-R function draw a PCA from an evec dataframe
+R function draw a PCA from a LASER dataframe
 }
 

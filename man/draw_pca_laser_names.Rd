@@ -17,6 +17,6 @@ draw_pca_laser_names(x, y, bam_file_string = "-merge-rmdup",
 \item{size_of_name}{size of name to plot}
 }
 \description{
-R function draw a PCA from an evec dataframe
+R function draw a PCA from a LASER dataframe
 }
 
