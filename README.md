@@ -5,7 +5,7 @@ Some R functions to draw PCAs from smartpca and LASER data
 NB! still under testing
 
 ### Requires
-
+* devtools
 * tidyr
 * ggplot2
 * RColourBrewer
