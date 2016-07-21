@@ -5,7 +5,7 @@
 \title{Draw PCA laser}
 \usage{
 draw_pca_laser(x, y = NULL, pc_a = "PC1", pc_b = "PC2",
-  bam_file_string = "-merge-rmdup", plot_names = FALSE, size_of_name = 3)
+  bam_file_string = NULL, plot_names = FALSE, size_of_name = 3)
 }
 \arguments{
 \item{x}{dataframe of reference data}
@@ -16,11 +16,13 @@ draw_pca_laser(x, y = NULL, pc_a = "PC1", pc_b = "PC2",
 
 \item{pc_b}{y-axis pc}
 
+\item{bam_file_string}{string to remove from sample names [NULL]}
+
 \item{plot_names}{do we want to plot sample names [FALSE]}
 
 \item{size_of_name}{size of name to plot[3]}
 }
 \description{
-R function draw a PCA from a LASER dataframe
+R function to draw a PCA from a LASER dataframe
 }
 

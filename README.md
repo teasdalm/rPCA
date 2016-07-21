@@ -1,27 +1,35 @@
 rPCA
 ====
-__NB!__ very much __alpha__
 
-* Install.
+Some R functions to draw PCAs from smartpca and LASER data  
+NB! still under testing
+
+### Requires
+
+* tidyr
+* ggplot2
+* RColourBrewer
+
+### Install
 
 ```R
 devtools::install_github("teasdalm/rPCA")
 library(rPCA)
 ```
 
-* Read evec file.
+### Examples 
+
+* Read smartpca data and plot PCA of reference data and samples
 
 ```R 
 tab <- read_evec("file.evec")
-```
-* Draw PCA all samples.
-
-```R
-draw_pca(tab)
+draw_pca_evec(tab, ids=c("Sample1", "Sample..n"))
 ```
 
-* Draw PCA highlighting family id.
+* Read laser data and draw pca of reference data and samples
 
 ```R
-draw_pca(tab, "FAMILY_ID")
+dat <- read.table("file.RefPC.coord", header = TRUE)
+samples <- read.table("file.SeqPC.coord", header = TRUE)
+draw_pca_evec(dat, samples)
 ```

@@ -1,18 +1,19 @@
 #' Draw PCA laser
 #'
-#'R function draw a PCA from a LASER dataframe
+#'R function to draw a PCA from a LASER dataframe
 #'
 #'@param x dataframe of reference data
 #'@param y dataframe of sample data
 #'@param pc_a x-axis pc
 #'@param pc_b y-axis pc
+#'@param bam_file_string string to remove from sample names [NULL]
 #'@param plot_names do we want to plot sample names [FALSE]
 #'@param size_of_name size of name to plot[3]
 #'@export
 #'@import ggplot2
 #'@import RColorBrewer
 
-draw_pca_laser <- function (x, y=NULL, pc_a="PC1", pc_b="PC2", bam_file_string = "-merge-rmdup", plot_names = FALSE, size_of_name = 3) {
+draw_pca_laser <- function (x, y=NULL, pc_a="PC1", pc_b="PC2", bam_file_string = NULL, plot_names = FALSE, size_of_name = 3) {
   others <- x
   my_colours <- brewer.pal(n = 12, name = "Paired")
 

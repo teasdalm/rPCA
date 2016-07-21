@@ -2,7 +2,7 @@
 % Please edit documentation in R/draw_pca_evec.R
 \name{draw_pca_evec}
 \alias{draw_pca_evec}
-\title{Draw PCA from smartpca evec file}
+\title{Draw PCA evec}
 \usage{
 draw_pca_evec(x, ids = "XXX", pc_a = "PC1", pc_b = "PC2",
   plot_names = FALSE, size_of_name = 3)
@@ -21,9 +21,9 @@ draw_pca_evec(x, ids = "XXX", pc_a = "PC1", pc_b = "PC2",
 \item{size_of_name}{size of name to plot[3]}
 }
 \description{
-R function draw a PCA from an evec dataframe
+R function draw a PCA from a smartpca/evec dataframe
 }
 \examples{
-draw_pca(x, ids="sample1")
+draw_pca(x, ids=c("Sample1", "Sample2"), plot_names=TRUE)
 }
 

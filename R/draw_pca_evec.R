@@ -1,6 +1,6 @@
-#' Draw PCA from smartpca evec file
+#' Draw PCA evec
 #'
-#'R function draw a PCA from an evec dataframe
+#'R function draw a PCA from a smartpca/evec dataframe
 #'
 #'@param x dataframe
 #'@param ids sample ids c("XXX")
@@ -12,7 +12,7 @@
 #'@import ggplot2
 #'@import RColorBrewer
 #'@examples
-#'draw_pca(x, ids="sample1")
+#'draw_pca(x, ids=c("Sample1", "Sample2"), plot_names=TRUE)
 
 draw_pca_evec <- function(x, ids="XXX", pc_a="PC1", pc_b="PC2", plot_names =FALSE, size_of_name = 3){
 

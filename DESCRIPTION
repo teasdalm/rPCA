@@ -1,10 +1,10 @@
 Package: rPCA
 Type: Package
-Title: What the package does (short line)
+Title: Draws PCAs from smartpca and LASER files
 Version: 1.0
-Date: 2014-09-24
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Date: 2016-07-21
+Author: Matthew Teasdale
+Maintainer: Matthew Teasdale <matthew@teasdale.xyz>
+Description: Draws PCAs from smartpca and LASER files
 License: GPL-3
 RoxygenNote: 5.0.1
