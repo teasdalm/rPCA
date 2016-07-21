@@ -16,11 +16,11 @@ draw_pca_laser(x, y = NULL, pc_a = "PC1", pc_b = "PC2",
 
 \item{pc_b}{y-axis pc}
 
-\item{bam_file_string}{string to remove from sample names [NULL]}
+\item{bam_file_string}{string to remove from sample names}
 
-\item{plot_names}{do we want to plot sample names [FALSE]}
+\item{plot_names}{do we want to plot sample names}
 
-\item{size_of_name}{size of name to plot[3]}
+\item{size_of_name}{size of name to plot}
 }
 \description{
 R function to draw a PCA from a LASER dataframe

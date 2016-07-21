@@ -6,9 +6,9 @@
 #'@param y dataframe of sample data
 #'@param pc_a x-axis pc
 #'@param pc_b y-axis pc
-#'@param bam_file_string string to remove from sample names [NULL]
-#'@param plot_names do we want to plot sample names [FALSE]
-#'@param size_of_name size of name to plot[3]
+#'@param bam_file_string string to remove from sample names
+#'@param plot_names do we want to plot sample names
+#'@param size_of_name size of name to plot
 #'@export
 #'@import ggplot2
 #'@import RColorBrewer

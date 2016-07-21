@@ -4,26 +4,26 @@
 \alias{draw_pca_evec}
 \title{Draw PCA evec}
 \usage{
-draw_pca_evec(x, ids = c("XXX"), pc_a = "PC1", pc_b = "PC2",
+draw_pca_evec(x, ids = NULL, pc_a = "PC1", pc_b = "PC2",
   plot_names = FALSE, size_of_name = 3)
 }
 \arguments{
 \item{x}{dataframe}
 
-\item{ids}{sample ids c("XXX")}
+\item{ids}{sample ids}
 
 \item{pc_a}{x-axis pc}
 
 \item{pc_b}{y-axis pc}
 
-\item{plot_names}{do we want to plot sample names [FALSE]}
+\item{plot_names}{do we want to plot sample names}
 
-\item{size_of_name}{size of name to plot[3]}
+\item{size_of_name}{size of name to plot}
 }
 \description{
 R function draw a PCA from a smartpca/evec dataframe
 }
 \examples{
-draw_pca(x, ids=c("Sample1", "Sample2"), plot_names=TRUE)
+draw_pca_evec(x, ids=c("Sample1", "Sample2"), plot_names=TRUE)
 }
 
