@@ -4,10 +4,21 @@
 \alias{draw_pca_laser}
 \title{Draw PCA laser}
 \usage{
-draw_pca_laser(x)
+draw_pca_laser(x, y = NULL, pc_a = "PC1", pc_b = "PC2",
+  bam_file_string = "-merge-rmdup", plot_names = FALSE, size_of_name = 3)
 }
 \arguments{
 \item{x}{dataframe of reference data}
+
+\item{y}{dataframe of sample data}
+
+\item{pc_a}{x-axis pc}
+
+\item{pc_b}{y-axis pc}
+
+\item{plot_names}{do we want to plot sample names [FALSE]}
+
+\item{size_of_name}{size of name to plot[3]}
 }
 \description{
 R function draw a PCA from a LASER dataframe
