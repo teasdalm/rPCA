@@ -31,5 +31,11 @@ draw_pca_evec(tab, ids=c("Sample1", "Sample..n"))
 ```R
 dat <- read.table("file.RefPC.coord", header = TRUE)
 samples <- read.table("file.SeqPC.coord", header = TRUE)
-draw_pca_evec(dat, samples)
+draw_pca_laser(dat, samples)
+```
+
+* More help
+```R
+?draw_pca_evec
+?draw_pca_laser
 ```
