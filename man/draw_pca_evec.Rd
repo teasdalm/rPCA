@@ -4,7 +4,7 @@
 \alias{draw_pca_evec}
 \title{Draw PCA evec}
 \usage{
-draw_pca_evec(x, ids = "XXX", pc_a = "PC1", pc_b = "PC2",
+draw_pca_evec(x, ids = c("XXX"), pc_a = "PC1", pc_b = "PC2",
   plot_names = FALSE, size_of_name = 3)
 }
 \arguments{
