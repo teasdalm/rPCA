@@ -12,7 +12,7 @@
 #'@import ggplot2
 #'@import RColorBrewer
 #'@examples
-#'draw_pca(x, ids=c("Sample1", "Sample2"), plot_names=TRUE)
+#'draw_pca_evec(x, ids=c("Sample1", "Sample2"), plot_names=TRUE)
 
 draw_pca_evec <- function(x, ids=c("XXX"), pc_a="PC1", pc_b="PC2", plot_names =FALSE, size_of_name = 3){
 
