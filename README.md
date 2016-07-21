@@ -12,6 +12,8 @@ NB! still under testing
 
 ### Install
 
+* Commands to install.
+
 ```R
 devtools::install_github("teasdalm/rPCA")
 library(rPCA)
@@ -19,14 +21,14 @@ library(rPCA)
 
 ### Examples 
 
-* Read smartpca data and plot PCA of reference data and samples
+* Read smartpca data and plot a PCA of reference data and samples.
 
 ```R 
 tab <- read_evec("file.evec")
 draw_pca_evec(tab, ids=c("Sample1", "Sample..n"))
 ```
 
-* Read laser data and draw pca of reference data and samples
+* Read LASER data and plot a PCA of reference data and samples.
 
 ```R
 dat <- read.table("file.RefPC.coord", header = TRUE)
@@ -34,7 +36,7 @@ samples <- read.table("file.SeqPC.coord", header = TRUE)
 draw_pca_laser(dat, samples)
 ```
 
-* More help
+* More help.
 ```R
 ?draw_pca_evec
 ?draw_pca_laser
