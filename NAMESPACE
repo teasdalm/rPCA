@@ -2,7 +2,9 @@
 
 export(draw_pca_evec)
 export(draw_pca_laser)
+export(int_pca_evec)
 export(read_evec)
 import(RColorBrewer)
 import(ggplot2)
+import(ggvis)
 import(tidyr)
