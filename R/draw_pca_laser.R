@@ -27,7 +27,9 @@ draw_pca_laser <- function (x, y=NULL, pc_a="PC1", pc_b="PC2", bam_file_string =
 
   } else {
     sample <- y
-    sample$indivID <- gsub(bam_file_string, "", sample$indivID)
+    if(!is.null(bam_file_string)){
+      sample$indivID <- gsub(bam_file_string, "", sample$indivID)
+    }
     my_colours <- brewer.pal(n = 12, name = "Paired")
 
     # base plot
