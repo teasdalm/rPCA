@@ -4,7 +4,7 @@
 \alias{draw_pca_laser}
 \title{Draw PCA laser}
 \usage{
-draw_pca_laser(x, y = NULL, pc_a = "PC1", pc_b = "PC2",
+draw_pca_laser(x, y = NULL, pc_x = "PC1", pc_y = "PC2",
   bam_file_string = NULL, plot_names = FALSE, size_of_name = 3)
 }
 \arguments{
@@ -12,9 +12,9 @@ draw_pca_laser(x, y = NULL, pc_a = "PC1", pc_b = "PC2",
 
 \item{y}{dataframe of sample data}
 
-\item{pc_a}{x-axis pc}
+\item{pc_x}{x-axis pc}
 
-\item{pc_b}{y-axis pc}
+\item{pc_y}{y-axis pc}
 
 \item{bam_file_string}{string to remove from sample names}
 

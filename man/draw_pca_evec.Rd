@@ -4,7 +4,7 @@
 \alias{draw_pca_evec}
 \title{Draw PCA evec}
 \usage{
-draw_pca_evec(x, ids = NULL, pc_a = "PC1", pc_b = "PC2",
+draw_pca_evec(x, ids = NULL, pc_x = "PC1", pc_y = "PC2",
   plot_names = FALSE, size_of_name = 3)
 }
 \arguments{
@@ -12,9 +12,9 @@ draw_pca_evec(x, ids = NULL, pc_a = "PC1", pc_b = "PC2",
 
 \item{ids}{sample ids}
 
-\item{pc_a}{x-axis pc}
+\item{pc_x}{x-axis pc}
 
-\item{pc_b}{y-axis pc}
+\item{pc_y}{y-axis pc}
 
 \item{plot_names}{do we want to plot sample names}
 
