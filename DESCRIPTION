@@ -8,3 +8,6 @@ Maintainer: Matthew Teasdale <matthew@teasdale.xyz>
 Description: Draws PCAs from smartpca and LASER files
 License: GPL-3
 RoxygenNote: 5.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

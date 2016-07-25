@@ -1,0 +1,27 @@
+---
+title: "rPCA"
+author: "Matthew Teasdale"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Uses
+
+### smartpca example 
+
+* Read and plot _evec_ file
+
+```R
+# load package
+library(rPCA)
+
+# read data
+dat <- read_evec("test.evec")
+
+# draw PCA
+draw_pca_evec(dat)
+```
