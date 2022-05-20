@@ -23,7 +23,7 @@ draw_pca_evec <- function(x, ids=NULL, pc_x="PC1", pc_y="PC2", plot_names =FALSE
     plt <- ggplot(others, aes_string(pc_x, pc_y)) +
       geom_point(aes(colour=pop, shape=pop), size=3.5) +
       scale_shape_manual(values = rep(c(1:10,12:20), 10)) +
-      scale_color_manual(values=rep(my_colours, 10))
+      scale_color_manual(values=rep(my_colours, 10)) + theme_bw()
     plt
   } else{
 
@@ -34,7 +34,7 @@ draw_pca_evec <- function(x, ids=NULL, pc_x="PC1", pc_y="PC2", plot_names =FALSE
     plt <- ggplot(others, aes_string(pc_x, pc_y)) +
       geom_point(aes(colour=pop, shape=pop), size=3.5) +
       scale_shape_manual(values = rep(c(1:10,12:20), 10)) +
-      scale_color_manual(values=rep(my_colours, 10))
+      scale_color_manual(values=rep(my_colours, 10)) + theme_bw()
 
     # no names plot blue squares
     if(plot_names == FALSE){
